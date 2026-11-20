@@ -1,0 +1,6 @@
+{
+  "name": "CHERISH DESK",
+  "description": "컴퓨터교육과 디자인을 전공하는 나만의 미니멀 화이트 & 큰 노란 체크 커서 포인트 앤 클릭 공부 아카이브",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

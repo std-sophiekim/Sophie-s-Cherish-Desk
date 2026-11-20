@@ -1,0 +1,143 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Apple SD Gothic Neo', 'Pretendard', sans-serif;
+    --font-mono: 'SF Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --font-hand: 'Gaegu', cursive, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #1E293B;
+    transition: background-color 250ms ease, color 250ms ease;
+    overflow-x: hidden;
+  }
+
+  html.dark body {
+    background-color: #171614;
+    color: #F4F1EA;
+  }
+}
+
+/* Custom Big Yellow Checkered Cursor mode */
+html.cherish-custom-cursor,
+html.cherish-custom-cursor * {
+  cursor: none !important;
+}
+
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Clean Pale Grey Rounded Lock-Screen Clock Typography */
+.imac-rounded-clock {
+  font-family: 'SF Pro Rounded', 'Nunito', ui-rounded, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-variant-numeric: tabular-nums;
+  color: #C4C9D2;
+  letter-spacing: -0.02em;
+}
+
+html.dark .imac-rounded-clock {
+  color: #A8A29E;
+}
+
+.font-pretendard {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+
+.imac-glass-wallpaper {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+}
+
+html.dark .imac-glass-wallpaper {
+  background:
+    radial-gradient(circle at 22% 28%, rgba(250, 204, 21, 0.22) 0%, transparent 55%),
+    radial-gradient(circle at 78% 72%, rgba(225, 29, 72, 0.16) 0%, transparent 55%),
+    linear-gradient(135deg, #242019 0%, #1B1814 55%, #2D2618 100%);
+}
+
+/* Big Yellow Checkered Pattern (24px squares for crisp tactile accent) */
+.bg-yellow-check {
+  background-color: #FFFDF7;
+  background-image:
+    linear-gradient(45deg, #FDE047 25%, transparent 25%),
+    linear-gradient(-45deg, #FDE047 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #FDE047 75%),
+    linear-gradient(-45deg, transparent 75%, #FDE047 75%);
+  background-size: 36px 36px;
+  background-position: 0 0, 0 18px, 18px -18px, -18px 0;
+}
+
+/* White pegboard dot pattern */
+.bg-pegboard-dots {
+  background-image: radial-gradient(circle, rgba(100, 116, 139, 0.24) 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+
+html.dark .bg-pegboard-dots {
+  background-image: radial-gradient(circle, rgba(244, 241, 234, 0.16) 2px, transparent 2px);
+}
+
+/* Subtle desk scrollbar */
+.desk-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.desk-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.desk-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+}
+
+.desk-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.55);
+}
+
+@keyframes window-rain-fall {
+  0% {
+    transform: translate3d(8px, -18px, 0) rotate(11deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.78;
+  }
+  85% {
+    opacity: 0.78;
+  }
+  100% {
+    transform: translate3d(-24px, 520px, 0) rotate(11deg);
+    opacity: 0;
+  }
+}
+
+.window-raindrop {
+  animation-name: window-rain-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
