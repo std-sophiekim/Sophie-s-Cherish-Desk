@@ -313,8 +313,8 @@ export function PhotorealisticDeskStage({
         {/* Base Clean White Desk Photograph (Panthella Lamp + Marshall Speaker + White-Bezel iMac) */}
         {!imgError ? (
           <img
-            src="/src/assets/images/sophie_desk_panthella_marshall_1795155560345.jpg"
-            alt="깔끔한 화이트 벽지와 블랙 테두리 없는 화이트 베젤 아이맥, 왼쪽 창문, 타공판(포스트잇·다마고찌·라즈베리파이), 오른쪽 체리 액자, 판텔라 버섯 스탠드, 마샬 스타일 스피커, 노란 시계, 연필꽂이, 아크릴 책꽂이, 체리 접시가 놓인 소피의 1인칭 데스크 사진"
+            src="/src/assets/images/sophie_desk_no_chair_1795156273477.jpg"
+            alt="의자 없이 깔끔한 화이트 책상 앞모습과 화이트 베젤 아이맥, 왼쪽 창문, 타공판(포스트잇·다마고찌·라즈베리파이), 오른쪽 체리 액자, 판텔라 버섯 스탠드, 마샬 스타일 스피커, 노란 시계, 연필꽂이, 아크릴 책꽂이, 체리 접시가 놓인 소피의 1인칭 데스크 사진"
             referrerPolicy="no-referrer"
             onError={() => setImgError(true)}
             className="w-full h-full object-fill select-none pointer-events-none"

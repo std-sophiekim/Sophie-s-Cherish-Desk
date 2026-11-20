@@ -49,9 +49,27 @@ export function DeskManualModal({ isOpen, onClose }: DeskManualModalProps) {
 
         {/* Large, Flowing Editorial Prose Body */}
         <div className="flex-1 min-h-0 overflow-y-auto desk-scroll px-7 py-7 sm:px-9 sm:py-8 space-y-8 text-[#1E293B] dark:text-[#F4F1EA]">
-          {/* Section 1: About Sophie */}
+          {/* Section 0: Cherish x Cherry Signature Art Concept */}
           <section className="space-y-3 pb-7 border-b border-slate-200/80 dark:border-stone-800">
             <h3 className="text-2xl sm:text-[26px] font-bold tracking-tight leading-snug text-balance">
+              <span className="text-[#E11D48]">체리쉬(Cherish)</span> ×{' '}
+              <span>체리(🍒)</span>, 소피만의 작은 아트 컨셉
+            </h3>
+            <p className="text-base sm:text-[17px] leading-[1.85] text-slate-700 dark:text-stone-300">
+              영어 단어 <strong className="font-semibold text-[#1E293B] dark:text-white">Cherish(체리쉬)</strong>는
+              ‘마음속에 소중히 간직하다’라는 뜻을 가지고 있어요. 저는 이
+              ‘체리쉬’라는 말과 발음이 닮은 <strong className="font-semibold text-[#E11D48]">체리(Cherry 🍒)</strong>를
+              재미있게 연결해서, 소중히 간직하고 싶은 배움과 아이디어를 빨간
+              체리 한 알씩 따 모으듯 기록하는 나만의 아트 컨셉으로
+              만들었습니다. 벽에 걸린 체리 액자부터 책마다 달 수 있는 체리
+              스탬프, 책상 위 체리 접시와 다마고찌의 체리 간식까지—이 책상의
+              모든 이야기가 체리쉬에서 출발해요.
+            </p>
+          </section>
+
+          {/* Section 1: About Sophie */}
+          <section className="space-y-3 pb-7 border-b border-slate-200/80 dark:border-stone-800">
+            <h3 className="text-xl sm:text-2xl font-bold tracking-tight leading-snug text-balance">
               안녕하세요, 컴퓨터교육과 디자인을 공부하는 소피(Sophie)입니다.
             </h3>
             <p className="text-base sm:text-[17px] leading-[1.85] text-slate-700 dark:text-stone-300">
@@ -129,8 +147,8 @@ export function DeskManualModal({ isOpen, onClose }: DeskManualModalProps) {
                 05. 아이맥 화면과 자동 저장 백업
               </h4>
               <p className="text-base sm:text-[17px] leading-[1.8] text-slate-700 dark:text-stone-300">
-                가운데 화이트 아이맥 화면 위로 마우스를 움직이면 화면 속 투명한
-                글라스 시계 위로 작은 노란 커서가 함께 따라 움직입니다. 작성한
+                가운데 화이트 아이맥 화면 위로 마우스를 움직이면 연한 그레이
+                라운드 시계 위로 작은 노란 커서가 함께 따라 움직입니다. 작성한
                 노트와 포스트잇은 브라우저에 자동으로 저장되며, 아래쪽 바의 백업
                 내보내기·불러오기를 이용하면 언제든 파일로 안전하게 보관할 수
                 있어요.

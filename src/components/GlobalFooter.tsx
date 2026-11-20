@@ -37,7 +37,7 @@ export function GlobalFooter({
             Sophie&apos;s Cherish Desk
           </span>
           <span aria-hidden="true">·</span>
-          <span>컴퓨터교육과 디자인을 한 권의 책상 위에 수집하는 소피의 아카이브</span>
+          <span>소중히 간직할 배움의 조각들을 체리처럼 따 모으는 소피의 책상</span>
           <span aria-hidden="true">·</span>
           <span className="font-mono-code tabular-nums">
             노트 {totalNotes}권 · 체리 {cherishedCount}개 수집
